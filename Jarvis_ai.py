@@ -28,7 +28,6 @@ while True:
     # Listen and get the speech
     speech_text = listen_for_speech()
     
-    # If we recognize the word 'end  jarvis', stop the program
     
     
     li = ["google", "youtube", "facebook", "amazon", "twitter", "instagram", "wikipedia", "reddit", "linkedin", "netflix", "apple", "microsoft", "pinterest", "tumblr", "bbc", "cnn", "nike", "spotify", "twitch", "yahoo", "etsy", "quora", "stackoverflow", "vimeo", "snapchat", "dropbox", "salesforce", "airbnb", "zillow", "whatsapp", "skype", "national geographic", "aliexpress", "github", "medium", "yandex", "bing", "new york times"]
@@ -43,6 +42,7 @@ while True:
                 engine.say(text)
                 webbrowser.open(check+".com")
                 engine.runAndWait()
+                #on thank you jarvis the program ends
     if "thank you jarvis" in speech_text:
             engine.say("It was my pleasure helping you (My master)")  
             engine.runAndWait()  
